@@ -1,0 +1,28 @@
+dataset_id: 'embroidery-prototype-dataset'
+dataset_version_id: ''
+concepts:
+  - id: 'applique'
+    name: 'applique'
+  - id: 'embroidery'
+    name: 'embroidery'
+  - id: 'pantograph'
+    name: 'pantograph'
+  - id: 'quilting'
+    name: 'quilting'
+train_params:
+  invalid_data_tolerance_percent: 5.0
+  template: Clarifai_InceptionTransferEmbedNorm
+  logreg: 1.0
+  image_size: 256.0
+  batch_size: 128.0
+  lrate: 0.1
+  base_gradient_multiplier: 0.001
+  num_epochs: 20.0
+  num_items_per_epoch: 0.0
+  average_horizontal_flips: true
+inference_params:
+  select_concepts:
+    - 'applique'
+    - 'embroidery'
+    - 'pantograph'
+    - 'quilting'

@@ -1,0 +1,125 @@
+# ============================================================
+# Project Diamond -- .gitignore  (PUBLIC repo: CODE ONLY)
+# Blocks secrets, proprietary designs, renders, data, and build output.
+# ============================================================
+
+# --- Secrets (NEVER commit) ---
+.env
+*.env
+**/.env
+*.env.*
+*.rtf
+imagerecognition.env*
+*.key
+*.pem
+credentials*
+secret*
+service-account*.json
+*_credentials*
+
+# --- Virtual environments ---
+venv/
+tf-venv/
+env/
+.venv/
+*-venv/
+
+# --- Python caches / notebooks ---
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+*.ipynb
+
+# --- Rust build output ---
+target/
+Client_Rust/target/
+**/*.rs.bk
+
+# --- ML model artifacts (binaries; not code, may encode proprietary training data) ---
+trained_model/
+*.h5
+*.keras
+*.onnx
+*.pb
+*.tflite
+*.weights.h5
+
+# --- Proprietary embroidery designs (designers'/PST intellectual property) ---
+*.pes
+*.dst
+*.exp
+*.jef
+*.vp3
+*.hus
+*.vip
+*.xxx
+*.art
+*.pec
+*.sew
+*.pcs
+
+# --- Rendered images / previews (derived from proprietary designs) ---
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tif
+*.tiff
+*.webp
+*.svg
+
+# --- Data, ground truth, caches ---
+*.csv
+*.tsv
+*.xlsx
+*.xlsm
+*.xls
+*.sqlite
+*.sqlite3
+*.db
+diamond_cache*
+*_results.json
+tags_cache.json
+
+# --- Documents ---
+*.docx
+*.doc
+*.pdf
+*.pptx
+
+# --- Archives ---
+*.zip
+*.tar
+*.tar.gz
+*.gz
+*.7z
+
+# --- Run logs (may contain design names / results) ---
+*.log
+*_log.txt
+*run_log.txt
+
+# --- Generated galleries / demos / data dirs (renders + proprietary content) ---
+Metadata_Capture/
+_diamond_demo/
+Project_Diamond_Demo/
+_render_compare/
+_web_locator/
+
+# --- Backups / scratch / review artifacts ---
+*.bak
+*.orig
+*.pre_*
+*_BACKUP_*
+*.prev_*
+*.applique_raw
+*.v5bak
+*.v6raw
+*_review.html
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

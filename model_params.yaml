@@ -1,0 +1,15 @@
+train_params:
+  dataset_id: 'embroidery-prototype-dataset'
+  dataset_version_id: ''
+  invalid_data_tolerance_percent: 5.0
+output_info:
+  data:
+    concepts:
+      - id: 'applique'
+        name: 'applique'
+      - id: 'embroidery'
+        name: 'embroidery'
+      - id: 'pantograph'
+        name: 'pantograph'
+      - id: 'quilting'
+        name: 'quilting'

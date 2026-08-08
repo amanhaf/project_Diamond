@@ -1,0 +1,7 @@
+pillow
+imagehash
+pyembroidery
+requests
+fastapi
+uvicorn
+python-multipart
