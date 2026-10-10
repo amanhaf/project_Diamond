@@ -65,3 +65,7 @@ Point the pipeline at a folder of embroidery files; it renders each design, gene
 **Aman Hafez**
 M.S. in Computer Science & Engineering, The Ohio State University
 [LinkedIn](https://www.linkedin.com/in/amanhafez/) · [GitHub](https://github.com/amanhaf)
+
+## Project report and evaluation
+
+See the [portfolio case study](docs/portfolio/README.md) for the report-based architecture, my contributions, reported runtime measurements, and evaluation limitations. The case study records historical findings and distinguishes unresolved report details from verified current implementation behavior.
